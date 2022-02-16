@@ -3,12 +3,21 @@
 <head>
 <title>The Schmidt Brothers Band</title>
 <style>
+      .fixTableHead {
+      overflow-y: auto;
+      height: 110px;
+    }
+    .fixTableHead thead th {
+      position: sticky;
+      top: 0;
+    }
 body {
   height:100%;
   width:95%;
   padding:0;
   margin:10;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -65,6 +74,7 @@ tr:nth-child(even) {
 <!-- Events Table Section -->
 <h2>Upcoming Events:</h2>
 
+<div class="fixTableHead">  
 <table>
   <tr>
     <th>Date</th>
@@ -91,7 +101,8 @@ tr:nth-child(even) {
     <td>7:30 PM</td>
   </tr>
 </table>
-
+</div>
+  
 <a href="https://www.facebook.com/schmidtbrothersband/events/?ref=page_internal">Click here to see a full list of events</a>
 
 <p>
